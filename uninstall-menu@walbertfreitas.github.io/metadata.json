@@ -1,0 +1,8 @@
+{
+  "uuid": "uninstall-menu@walbertfreitas.github.io",
+  "name": "Desinstalar pelo menu",
+  "description": "Adds an Uninstall item to the app context menu (app grid, dash). Works with .deb (apt), Flatpak and AppImageLauncher apps; asks before removing.",
+  "shell-version": ["46", "47", "48", "49", "50"],
+  "url": "https://github.com/walbertfreitas/uninstall-menu",
+  "version": 1
+}

@@ -124,7 +124,9 @@ export default class UninstallMenuExtension extends Extension {
         const appInfo = app.app_info;
         const name = app.get_name();
         if (quickKind(appInfo) === 'appimage') {
-            // a ferramenta do AppImageLauncher já confirma e apaga o arquivo e o atalho
+            // a ferramenta do AppImageLauncher já confirma e apaga o arquivo e o atalho; ela abre uma
+            // janela comum, que só aparece fora da visão geral (gaveta de apps)
+            Main.overview.hide();
             app.launch_action(APPIMAGE_ACTION, global.get_current_time(), -1);
             return;
         }
